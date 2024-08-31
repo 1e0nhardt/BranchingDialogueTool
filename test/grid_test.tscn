@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://wt1mef1cqnki"]
+
+[ext_resource type="Script" path="res://scenes/pan_zoom_camera.gd" id="1_3jf86"]
+[ext_resource type="Script" path="res://test/grid_test.gd" id="1_5arbc"]
+[ext_resource type="Script" path="res://scenes/grid.gd" id="1_i4om6"]
+
+[node name="GridTest" type="Node2D"]
+script = ExtResource("1_5arbc")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+script = ExtResource("1_3jf86")
+
+[node name="Grid" type="Node2D" parent="." node_paths=PackedStringArray("_camera")]
+script = ExtResource("1_i4om6")
+_camera = NodePath("../Camera2D")

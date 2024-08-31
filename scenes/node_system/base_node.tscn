@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ed317cavx021"]
+
+[ext_resource type="Script" path="res://scenes/node_system/base_node.gd" id="1_vfhqa"]
+
+[node name="BaseNode" type="Node2D"]
+script = ExtResource("1_vfhqa")
+title_color = Color(0.403922, 0.27451, 0.211765, 1)
+title_size = Vector2(80, 20)
+panel_color = Color(0.666667, 0.701961, 0.588235, 1)
+panel_size = Vector2(80, 100)
